@@ -1,0 +1,12 @@
+<meta>
+	<info author="NicolasECM" name="Trabajo Minero" version="1.0" type="script" />
+	<script src="Client/client.lua" type="client"/>
+	<script src="Client/TextosMark.lua" type="client"/>
+	<script src="Server/server.lua" type="server"/>
+	<script src="Server/serverMinero.lua" type="server"/>
+	<script src="Server/seguridadDatos.lua" type="server"/>
+	<file src="Modelos/pico.dff" />
+	<file src="Modelos/pico.txd" />
+	<file src="Modelos/pico.mp3" />
+	<include resource="trabajos" /> 
+</meta>
