@@ -62,7 +62,7 @@ function ( hitPlayer )
 					if(isPedInVehicle (getLocalPlayer()))then
 						outputChatBox("[Minero]#ffffffNo puede usarlo si esta en un vehiculo", 119, 119, 119,true)
 					else
-						if(getElementData(localPlayer, "Ocupacion" ) == "Civil") then
+						if(getElementData(localPlayer, "Ocupacion" ) == "Civil" or getElementData(localPlayer, "Ocupacion") == nil) then
 							PanelMinero()
 						else
 							outputChatBox("[Minero]#ffffff tienes que ser civil para tener este trabajo, usa el comando /civil", 119, 119, 119,true)

@@ -120,7 +120,7 @@ function crearMarcadoresMinero()
             end
         end)
 end
-addEventHandler("onResourceStart", root, crearMarcadoresMinero)
+addEventHandler("onResourceStart", resourceRoot, crearMarcadoresMinero)
 
 function cancelarAcciones(jugador)
     toggleControl ( jugador, "accelerate", false )
