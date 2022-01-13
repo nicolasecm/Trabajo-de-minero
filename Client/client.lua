@@ -14,7 +14,7 @@ function PanelMinero()
     guiWindowSetSizable(window, false)
 
     local obtenernombreinicio = getPlayerName(getLocalPlayer())	
-    memomision1 = guiCreateMemo(x*10, y*25, x*242, y*417, "" .. obtenernombreinicio ..  " a partir de ahora trabajaras como recolector de basura, tu decides si aceptar o no", false, window)
+    memomision1 = guiCreateMemo(x*10, y*25, x*242, y*417, "" .. obtenernombreinicio ..  " a partir de ahora trabajaras como minero, tu decides si aceptar o no", false, window)
     guiMemoSetReadOnly(memomision1, true)
     botonaceptar = guiCreateButton(x*279, y*25, x*227, y*76, "Aceptar Trabajo", false, window)
     botonsalir = guiCreateButton(x*278, y*339, x*228, y*82, "Salir", false, window)
