@@ -10,6 +10,8 @@ local marcadoresTrabajoMinero= {
 	[9]={540.94140625, 828.6962890625, -39.990226745605, 6}
 }
 
+local piedra = nil
+
 function crearMarcadoresMinero()
     markerDejarMateriales = createMarker ( 601.419921875, 867.9912109375, -43.9609375, "cylinder",1.8, 255, 0, 0, 255 )
     blipMark = createBlipAttachedTo(markerDejarMateriales,0,2,255, 0, 0,255,0, 1000, resourceRoot)
@@ -18,7 +20,6 @@ function crearMarcadoresMinero()
     tablaBlips = {}
     tablaBlipMark = {}
     table.insert(tablaBlipMark, blipMark)
-    local piedra = nil
     for rid, row in ipairs ( marcadoresTrabajoMinero ) do 
         x, y, z = marcadoresTrabajoMinero[rid][1], marcadoresTrabajoMinero[rid][2], marcadoresTrabajoMinero[rid][3] 
         marcamin = createMarker( x, y, z, "cylinder",1.4, 229, 236, 17, 255, resourceRoot)
@@ -84,7 +85,7 @@ function crearMarcadoresMinero()
                 if isElementWithinColShape ( v, zonaMineros ) and ocupacion:find "Minero" ~= nil then
                     setElementVisibleTo ( l, v, true )
                 else
-                    setElementVisibleTo ( l, v, false )
+                    setElementVisibleTo ( l, v, false ) 
                 end
             end
             for u,w in ipairs(tablaBlipMark) do
